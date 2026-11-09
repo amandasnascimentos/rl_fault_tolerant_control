@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rl_fault_tolerant_control"
+version = "0.1.0"
+description = "Fault-tolerant thruster allocation and RL control for AUVs in HoloOcean"
+dependencies = [
+    "numpy",
+    "scipy",
+    "PyYAML",
+    "gymnasium",
+    "holoocean"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
