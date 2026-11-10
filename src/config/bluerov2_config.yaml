@@ -1,7 +1,7 @@
 vehicle_name: "BlueROV2"
 k_n: 1.0
-u_min: -40.0
-u_max: 40.0
+u_min: -26
+u_max: 26
 
 ho_to_model: [5, 4, 6, 7, 1, 0, 2, 3]
 sinais: [1, -1, 1, -1, 1, 1, -1, -1]
@@ -26,3 +26,10 @@ thruster_directions:
   - [ 0.0,    0.0,    1.0]
   - [ 0.0,    0.0,    1.0]
   - [ 0.0,    0.0,   -1.0]
+
+control:
+  dt: 0.016667
+  kp: [10.0, 10.0, 15.0, 2.0, 2.0, 2.0]
+  kd: [8.0, 8.0, 10.0, 2.0, 2.0, 2.0]
+  fz_ff: 0.0
+  tau_max: [66.0, 66.0, 93.0, 20.0, 11.0, 17.0]   # 90% do teto isolado (capacidade_eixos.py)
