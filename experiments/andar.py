@@ -6,7 +6,7 @@ import holoocean
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from control.allocator import GenericThrusterAllocator          # noqa: E402
+from allocation.allocator import GenericThrusterAllocator          # noqa: E402
 from environment.holoocean_config import get_default_scenario   # noqa: E402
 
 SCENARIO = get_default_scenario()

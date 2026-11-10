@@ -1,12 +1,11 @@
 vehicle_name: "BlueROV2"
 k_n: 1.0
+u_min: -40.0
 u_max: 40.0
 
-# Mapeamento de índices (se necessário para conversão de simulação)
 ho_to_model: [5, 4, 6, 7, 1, 0, 2, 3]
 sinais: [1, -1, 1, -1, 1, 1, -1, -1]
 
-# Posições (x, y, z) de cada propulsor em relação ao centro de massa
 thruster_positions:
   - [ 0.156,  0.111, 0.0]
   - [ 0.156, -0.111, 0.0]
@@ -17,7 +16,6 @@ thruster_positions:
   - [-0.120,  0.218, 0.0]
   - [-0.120, -0.218, 0.0]
 
-# Orientações (vetores unitários direcional d_x, d_y, d_z) de cada propulsor
 sq: 0.70710678
 thruster_directions:
   - [ 0.707, -0.707,  0.0]

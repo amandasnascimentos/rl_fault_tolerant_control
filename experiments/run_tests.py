@@ -6,7 +6,7 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from environment.holoocean_config import HoloOceanBlueROVWrapper  # noqa: E402
-from control.allocator import GenericThrusterAllocator as ThrusterAllocator  # noqa: E402
+from allocation.allocator import GenericThrusterAllocator as ThrusterAllocator  # noqa: E402
 
 def euler_de_T(T):
     R = T[:3, :3]
